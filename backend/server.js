@@ -1,5 +1,5 @@
 const express = require('express');
-const dotenv = require('dotenv').config()
+// const dotenv = require('dotenv').config()
 const userRoutes = require('./routes/programmingRoutes')
 const connectDB = require('./config/db')
 const port = process.env.PORT || 3000;
