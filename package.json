@@ -1,0 +1,16 @@
+{
+	"name": "interview-api",
+	"version": "1.0.0",
+	"description": "Api that allows users to retrieve programming questions",
+	"author": "Roy Perez",
+	"main": "server.js",
+	"scripts": {
+		"start": "npm install && node backend/server"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"express": "*",
+		"express-async-handler": "^1.2.0",
+		"mongoose": "^6.3.2"
+	}
+}
