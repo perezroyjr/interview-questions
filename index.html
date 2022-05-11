@@ -9,8 +9,85 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">		
 	</head>
 	<body>
+		
 		<div>
-			<h1 class="h1 display-1 text-center flex-column align-middle">Programming Inteview Questions API</h1>
+			<h1 class="bg-dark display-1 text-center text-light align-middle mb-5">Programming Inteview Questions API</h1>
 		</div>
+
+		<hr>
+		
+		<p class="lead display-6 text-center mt-5">Welcome to Programming Interview Questions API.</p>
+		
+		<div class="d-flex container">
+		 	<div class="flex-column mt-5 lead">
+		 		<div>
+		 			<p>
+		 			 Here you will find a free api that allows you to retreive programming focused interview questions and solutions. I have set up four different api endpoints that currently only host a total of 10 questions each. The motivation for creating this API was the inability to find my own when looking for a free one to use. More questions will be added in the future. 
+		 			</p>
+		 			<p>
+		 				The types of endpoints include:	
+		 			</p>
+		 			<ul>
+		 				<li>/programming-question</li>
+		 				<li>/programming-questions</li>
+		 				<li>/star-question</li>
+		 				<li>/star-questions</li>
+		 			</ul>
+		 		</div>
+		 		<hr class="mt-5">
+		 		
+		 		<div>
+		 			<h3>/programming-question</h3>
+		 			<p>
+		 				The programming-question endpoint can be reached via <a class="text-dark" href="https://programming-interview.herokuapp.com/api/programming-question" alt="programming-question endpoint">Programming Question Endpoint</a>
+		 			</p>
+		 			<p>
+		 				The route in which it can be achieved is <section>/api/programming-question</section><br>
+		 				This route uses the GET method http method and returns a programming interview question, and a link to a solution in java in JSON format.
+		 			</p>
+		 		</div>
+
+		 		<hr class="mt-5">
+		 		
+		 		<div>
+		 			<h3>/programming-questions</h3>
+		 			<p>
+		 				The programming-questions endpoint can be reached via <a class="text-dark" href="https://programming-interview.herokuapp.com/api/programming-questions" alt="programming-questions endpoint">Programming Questions Endpoint</a>
+		 			</p>
+		 			<p>
+		 				The route in which it can be achieved is <section>/api/programming-questions</section><br>
+		 				This route uses the GET method http method and returns all of the programming interview questions, and a link to all of the solutions in java in JSON format.
+		 			</p>
+		 		</div>
+		 		
+		 		<hr class="mt-5">
+		 		
+		 		<div>
+		 			<h3>/star-question</h3>
+		 			<p>
+		 				The star-question endpoint can be reached via <a class="text-dark" href="https://programming-interview.herokuapp.com/api/star-question" alt="star-question endpoint">Star Question Endpoint</a>
+		 			</p>
+		 			<p>
+		 				The route in which it can be achieved is <section>/api/star-question</section><br>
+		 				This route uses the GET method http method and returns a star behavioral interview question in JSON format.The motivation for creating this endpoint was that programming interviews are not only technical but behavioral as well. This will help in preparing for interviews. 
+		 			</p>
+		 		</div>		
+
+		 		<hr class="mt-5">
+		 		
+		 		<div>
+		 			<h3>/star-questions</h3>
+		 			<p>
+		 				The star-questions endpoint can be reached via <a class="text-dark" href="https://programming-interview.herokuapp.com/api/star-questions" alt="star-questions endpoint">Star Questions Endpoint</a>
+		 			</p>
+		 			<p>
+		 				The route in which it can be achieved is <section>/api/star-questions</section><br>
+		 				This route uses the GET method http method and returns all of the star behavioral interview questions in JSON format.The motivation for creating this endpoint was that programming interviews are not only technical but behavioral as well. This will help in preparing for interviews. 
+		 			</p>
+		 		</div>			 		 		
+		 	</div>
+		</div>
+
+		<hr class="mb-5">
 	</body>
 </html>
