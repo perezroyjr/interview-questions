@@ -39,7 +39,7 @@ const getStarQuestion = asyncHandler( async (request, response) => {
   var random = Math.floor(Math.random() * count)
 
   // Again query all users but only fetch one offset by our random #
-  Question.findOne().skip(random).exec(
+  Behavioral.findOne().skip(random).exec(
     function (err, result) {
       // Tada! random user
       console.log(result)
