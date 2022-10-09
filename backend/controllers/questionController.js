@@ -15,10 +15,11 @@ const getProgrammingQuestion = asyncHandler( async (request, response) => {
   Question.findOne().skip(random).exec(
     function (err, result) {
       // Tada! random user
-      console.log(result) 
+      console.log(result)
+      response.json(result) 
     })
 })
-	response.json(questions)
+	
 })
 
 //@desc Get Programming Question
