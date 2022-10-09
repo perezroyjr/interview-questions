@@ -6,7 +6,7 @@ const Behavioral = require('../models/behavioralModel')
 //@route GET /api/programming-question
 //@access Public
 const getProgrammingQuestion = asyncHandler( async (request, response) => {
-	const questions = await Question.count().exec(function (err, count) {
+	const questions = await Question.countDocuments().exec(function (err, count) {
 
   // Get a random entry
   var random = Math.floor(Math.random() * count)
