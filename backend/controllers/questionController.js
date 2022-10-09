@@ -6,7 +6,18 @@ const Behavioral = require('../models/behavioralModel')
 //@route GET /api/programming-question
 //@access Public
 const getProgrammingQuestion = asyncHandler( async (request, response) => {
-	const questions = await Question.findOne() 
+	const questions = await Question.count().exec(function (err, count) {
+
+  // Get a random entry
+  var random = Math.floor(Math.random() * count)
+
+  // Again query all users but only fetch one offset by our random #
+  Question.findOne().skip(random).exec(
+    function (err, result) {
+      // Tada! random user
+      console.log(result) 
+    })
+})
 	response.json(questions)
 })
 
